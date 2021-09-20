@@ -13,5 +13,7 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Jest and RTL
         run: yarn ci:test
+      - name: Start Next Dev Server
+        run: npx next dev -p 3000
       - name: Cypress
         run: yarn ci:cypress
