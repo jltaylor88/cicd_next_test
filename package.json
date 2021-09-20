@@ -7,10 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test_watch": "jest --watch",
-    "test": "jest",
+    "test": "jest --watch",
+    "ci:test": "jest --ci",
     "cypress": "cypress open",
-    "cypress_ci": "cypress run"
+    "ci:cypress": "cypress run"
   },
   "dependencies": {
     "next": "11.1.2",

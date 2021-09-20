@@ -1,5 +1,3 @@
-/// <reference types="Cypress" />
-
 describe("default navigation", () => {
   it("should navigate us to the documentation page", () => {
     // Start from the index page
