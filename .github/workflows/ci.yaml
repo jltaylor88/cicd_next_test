@@ -15,5 +15,5 @@ jobs:
         run: yarn ci:test
 
       - name: Cypress
-      run: yarn ci:startServer
-      run: yarn ci:cypress
+        run: yarn ci:startServer
+        run: yarn ci:cypress
