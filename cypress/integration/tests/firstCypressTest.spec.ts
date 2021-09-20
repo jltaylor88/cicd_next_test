@@ -10,6 +10,6 @@ describe("default navigation", () => {
     link.click();
 
     // Check the url
-    cy.url().should("include", "/docssssss");
+    cy.url().should("include", "/docs");
   });
 });
