@@ -10,7 +10,7 @@
     "test": "jest --watch",
     "ci:test": "jest",
     "cypress": "cypress open",
-    "ci:cypress": "cypress run"
+    "ci:cypress": "cypress run --browser chrome"
   },
   "dependencies": {
     "next": "11.1.2",

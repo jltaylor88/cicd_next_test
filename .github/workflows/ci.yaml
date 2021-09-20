@@ -16,4 +16,4 @@ jobs:
         run: yarn ci:test
 
       - name: Run Cypress tests
-        run: npx cypress info
+        run: yarn ci:cypress
