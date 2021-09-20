@@ -1,3 +1,6 @@
+/// <reference types="@testing-library/jest-dom" />
+/// <reference types="@testing-library/react" />
+
 import { render, screen } from "@testing-library/react";
 import CustomHeader from "../components/CustomHeader";
 import Home from "../pages/index";
