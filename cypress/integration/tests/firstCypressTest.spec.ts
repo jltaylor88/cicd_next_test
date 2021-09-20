@@ -1,7 +1,7 @@
 describe("default navigation", () => {
   it("should navigate us to the documentation page", () => {
     // Start from the index page
-    cy.visit("/");
+    cy.visit("http://localhost:3000");
 
     // Find the documentation link
     const link = cy.get("a").contains("Documentation");

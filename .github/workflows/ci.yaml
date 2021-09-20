@@ -1,10 +1,9 @@
 name: CI
 on: [push]
 jobs:
-  test_jest_rtl:
-    name: Jest and RTL
+  test:
+    name: Jest and RTL tests
     runs-on: ubuntu-latest
-    container: cypress/browsers:node14.17.0-chrome88-ff89
 
     steps:
       - name: Checkout code
@@ -12,11 +11,6 @@ jobs:
 
       - name: Install packages
         run: yarn install --frozen-lockfile
-      - name: Jest and RTL Tests
+      - name: Jest and RTL
         run: yarn ci:test
-
-      - name: Cypress Tests
-        uses: cypress-io/github-action@v2
-        with:
-          browser: chrome
-      - run: yarn ci:cypress
+      - name: Cypress
