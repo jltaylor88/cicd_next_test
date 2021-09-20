@@ -15,5 +15,11 @@ jobs:
       - name: Jest and RTL
         run: yarn ci:test
 
+      - name: Build files
+        run: yarn build
+
+      - name: Start the server
+        run: yarn start
+
       - name: Run Cypress tests
         run: yarn ci:cypress
