@@ -14,6 +14,8 @@ jobs:
       - name: Jest and RTL
         run: yarn ci:test
 
-      - name: Cypress
+      - name: Start Local Server
         run: yarn ci:startServer
+
+      - name: Run Cypress on local server
         run: yarn ci:cypress
