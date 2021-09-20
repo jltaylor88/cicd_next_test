@@ -10,8 +10,7 @@
     "test": "jest --watch",
     "ci:test": "jest",
     "cypress": "cypress open",
-    "ci:cypress": "cypress run",
-    "ci:startServer": "start http://localhost:3000"
+    "ci:cypress": "cypress run"
   },
   "dependencies": {
     "next": "11.1.2",

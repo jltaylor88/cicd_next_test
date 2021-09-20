@@ -2,7 +2,7 @@ name: CI
 on: [push]
 jobs:
   test:
-    name: Jest and RTL tests
+    name: Tests
     runs-on: ubuntu-latest
 
     steps:
@@ -11,11 +11,9 @@ jobs:
 
       - name: Install packages
         run: yarn install --frozen-lockfile
+
       - name: Jest and RTL
         run: yarn ci:test
 
-      - name: Start Local Server
-        run: yarn ci:startServer
-
-      - name: Run Cypress on local server
-        run: yarn ci:cypress
+      - name: Run Cypress tests
+        run: npx cypress info
