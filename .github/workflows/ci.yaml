@@ -14,3 +14,4 @@ jobs:
       - name: Jest and RTL
         run: yarn ci:test
       - name: Cypress
+        run: yarn ci:cypress
