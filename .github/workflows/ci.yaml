@@ -1,16 +1,17 @@
 name: CI
 on: [push]
 jobs:
-  name: Jest and RTL Tests
-  steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+  jest-and-rtl:
+    name: Jest and RTL Tests
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Install packages
-      run: yarn install --frozen-lockfile
+      - name: Install packages
+        run: yarn install --frozen-lockfile
 
-    - name: Jest and RTL
-      run: yarn ci:test
+      - name: Jest and RTL
+        run: yarn ci:test
 
   cypress-run:
     name: Cypress Tests
