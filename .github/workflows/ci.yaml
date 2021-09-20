@@ -15,5 +15,5 @@ jobs:
         run: yarn ci:test
 
       - name: Cypress
-        uses: cypress-io/github-action@v2
-      - run: yarn ci:cypress
+      run: yarn ci:startServer
+      run: yarn ci:cypress
