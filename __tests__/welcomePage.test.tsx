@@ -1,11 +1,7 @@
-
-
 import { render, screen } from "@testing-library/react";
 import React from "react";
 import CustomHeader from "../components/CustomHeader";
 import Home from "../pages";
-
-
 
 it("should render the NextJS welcome title", () => {
   render(<Home />);
@@ -13,14 +9,13 @@ it("should render the NextJS welcome title", () => {
 });
 
 it("should render the custom header", () => {
-  render( <CustomHeader /> );
+  render(<CustomHeader />);
   const customHeader = screen.getByText(/I am a custom header/i);
-  expect(customHeader).toBeTruthy()
+  expect(customHeader).toBeTruthy();
 });
 
 it("should render the link for visiting the deploy page", () => {
   render(<Home />);
   const link = screen.getByTestId("how_to_deploy-link");
   expect(link).toBeInTheDocument();
-
-})
+});
