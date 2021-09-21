@@ -18,10 +18,10 @@ jobs:
       - name: Linting
         run: yarn lint
 
-      - name: Jest and RTL
+      - name: Jest and RTL Tests
         run: yarn ci:test
 
-      - name: Cypress run
+      - name: Cypress Tests
         uses: cypress-io/github-action@v2
         with:
           build: yarn build
