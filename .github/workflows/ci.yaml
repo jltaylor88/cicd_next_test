@@ -26,6 +26,3 @@ jobs:
         with:
           build: yarn build
           start: yarn start
-
-      - name: Check builds without errors
-        run: yarn build
