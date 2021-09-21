@@ -17,3 +17,10 @@ it("should render the custom header", () => {
   const customHeader = screen.getByText(/I am a custom header/i);
   expect(customHeader).toBeTruthy()
 });
+
+it("should render the link for visiting the deploy page", () => {
+  render(<Home />);
+  const link = screen.getByTestId("how_to_deploy-link");
+  expect(link).toBeInTheDocument();
+
+})
