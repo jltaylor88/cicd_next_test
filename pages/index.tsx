@@ -5,6 +5,7 @@ import CustomHeader from '../components/CustomHeader'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
+  console.log("Hello world");
   return (
     <div className={styles.container}>
       <Head>
