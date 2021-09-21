@@ -17,7 +17,6 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
-        <CustomHeader />
 
         <p className={styles.description}>
           Get started by editing{" "}
@@ -48,7 +47,7 @@ const Home: NextPage = () => {
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
           >
-            <h2>Deployment &rarr;</h2>
+            <h2>Deploy &rarr;</h2>
             <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
