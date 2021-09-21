@@ -1,8 +1,8 @@
 name: CI
 on: [push]
 jobs:
-  jest-and-rtl:
-    name: Jest and RTL Tests
+  tests:
+    name: Tests
     runs-on: ubuntu-latest
 
     steps:
@@ -14,14 +14,6 @@ jobs:
 
       - name: Jest and RTL
         run: yarn ci:test
-
-  cypress-run:
-    name: Cypress Tests
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
 
       - name: Cypress run
         uses: cypress-io/github-action@v2
