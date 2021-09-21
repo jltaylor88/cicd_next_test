@@ -2,7 +2,7 @@ name: CI
 on: [push]
 jobs:
   tests:
-    name: Tests
+    name: Lint and Test
     runs-on: ubuntu-latest
 
     steps:
